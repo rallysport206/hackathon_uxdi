@@ -24,6 +24,7 @@ class Signup extends Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
+    console.log('this', this);
     axios.post('/auth/signup', {
       name: this.state.name,
       email: this.state.email,
